@@ -1,0 +1,27 @@
+<section>
+  <div class="row col-md-12 container">
+    <div class="col-md-6" *ngFor="let pokemons of pokemon">
+      <a href="#">
+        <article class="c-card-flip">
+          <div class="c-card-flip__flipper">
+            <div class="c-card-flip__front">
+              <img
+                src="https://www.pngkey.com/png/full/757-7574864_bola-pokemon-png.png"
+                class="c-card-flip__image img"
+                alt="Card Image"
+              />
+            </div>
+
+            <div class="c-card-flip__back">
+              <h3 class="c-card-flip__title">
+                {{ pokemons.name }}
+                <br />
+                This is a separated card-flip component : )
+              </h3>
+            </div>
+          </div>
+        </article>
+      </a>
+    </div>
+  </div>
+</section>
